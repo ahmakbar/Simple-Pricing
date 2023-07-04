@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Cards</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <div class="flex justify-center" style="height: 440px; background-color: rgb(0, 41, 122);">
+        <div class="flex column align-center" style="color: white;">
+            <h1 style="margin-top: 100px;">SIMPLE PRICING</h1><br>
+            <h3 style="width: 40%; text-align: center; font-weight: 100;">The Simple Pricing Card project is a responsive and customizable pricing card layout built with HTML and CSS. It provides a clean and modern design for displaying pricing tiers or plans on a website.</h3>
+        </div>
+    </div>
+    <div class="container flex justify-center" style="margin-top: -300px;">
+        <div class="card hover flex column" style="align-items: start;">
+            <div class="flex on-card justify-between" style="">
+                <h3 class="" style="">BASIC</h3>    
+            </div>
+            <div class="card-header flex justify-center">
+                <div class="card-price">$</div>
+                <p class="flex" style="font-size: 40px; font-weight: bold;">6</p>
+                <div class="flex" style="justify-content: center;
+                align-items: end; margin-bottom:8px;">/month</div>
+            </div>
+            <hr style="width: 80%;">
+            <ul class="card-features">
+                <li><b>10</b> Projects</li>
+                <li><b>10</b> Pages</li>
+                <li><b>100</b> Mb Disk Space</li>
+            </ul>
+            <div class="flex w100 justify-center" style="background-color: transparent; padding-bottom: 20px;">
+                <button class="btn-buy button-hover" onclick="showSuccessAlert('BASIC')">BUY NOW</button>
+            </div>
+        </div>
+        <div class="card hover flex column" style="align-items: start;">
+            <div class="flex on-card justify-between" style="">
+                <h3 class="" style;">STANDARD</h3>    
+                <h3 class="" style="font-size: 15px;">Save 15%</h3>    
+            </div>
+            <div class="card-header flex justify-center">
+                <div class="card-price">$</div>
+                <p class="flex" style="font-size: 40px; font-weight: bold;">9</p>
+                <div class="flex" style="justify-content: center;
+                align-items: end; margin-bottom:8px;">/month</div>
+            </div>
+            <hr style="width: 80%;">
+            <ul class="card-features">
+                <li><b>20</b> Projects</li>
+                <li><b>20</b> Pages</li>
+                <li><b>200</b> Mb Disk Space</li>
+            </ul>
+            <div class="flex w100 justify-center" style="background-color: transparent; padding-bottom: 20px;">
+                <button class="btn-buy button-hover" onclick="showSuccessAlert('STANDARD')">BUY NOW</button>
+            </div>
+        </div>
+        <div class="card hover flex column" style="align-items: start;">
+            <div class="flex on-card justify-between" style="">
+                <h3 class="" style="">ADVANCED</h3>    
+            </div>
+            <div class="card-header flex justify-center">
+                <div class="card-price">$</div>
+                <p class="flex" style="font-size: 40px; font-weight: bold;">12</p>
+                <div class="flex" style="justify-content: center;
+                align-items: end; margin-bottom:8px;">/month</div>
+            </div>
+            <hr style="width: 80%;">
+            <ul class="card-features">
+                <li><b>40</b> Projects</li>
+                <li><b>40</b> Pages</li>
+                <li><b>500</b> Mb Disk Space</li>
+            </ul>
+            <div class="flex w100 justify-center" style="background-color: transparent; padding-bottom: 20px;">
+                <button class="btn-buy button-hover" onclick="showSuccessAlert('ADVANCED')">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function showSuccessAlert(plan) {
+            swal({
+                title: "Success!",
+                text: "You have successfully subscribed to the " + plan + " plan.",
+                icon: "success",
+            });
+        }
+    </script>
+
+
+</html>

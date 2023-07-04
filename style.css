@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+html {
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(241, 241, 241);
+}
+
+/*
+ *  STYLE 2
+ */
+
+ #style-2::-webkit-scrollbar-track
+ {
+
+     border-radius: 10px;
+     margin: 20px;
+ }
+ 
+ #style-2::-webkit-scrollbar
+ {
+     width: 12px;
+ }
+ 
+ #style-2::-webkit-scrollbar-thumb
+ {
+     border-radius: 20px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: #121212;
+     border: 2px solid rgb(255, 255, 255);
+ }
+ 
+p {
+    font-size: 15px;
+}
+
+h4 {
+    margin: 0;
+}
+h1 {
+    margin: 10px;
+}
+
+.w100 {width: 100%; background-color: rgb(169, 169, 169);}
+.h60 {height: 60px;}
+.h100 {height: 100px;}
+.relative {position: relative;}
+.flex {display: flex;}
+.justify-center {justify-content: center;}
+.justify-between {justify-content: space-between;}
+.align-center {align-items: center;}
+.column {flex-direction: column;}
+.flex-wrap {flex-wrap: wrap;}
+.pad-content {padding: 0px 10px;}
+.pad2 {padding: 20px;}
+.pt-10 {padding-top: 10px;}
+.padl-10 {padding-left: 10px;}
+.px20 {padding-left: 20px; padding-right: 20px;}
+.px10 {padding-left: 10px; padding-right: 10px;}
+.py20 {padding-top: 20px; padding-bottom: 20px;}
+.py10 {padding-top: 10px; padding-bottom: 10px;}
+.mx20 {margin-left: 20px; margin-right: 20px;}
+.mx10 {margin-left: 10px; margin-right: 10px;}
+.my20 {margin-top: 20px; margin-bottom: 20px;}
+.my10 {margin-top: 10px; margin-bottom: 10px;}
+h1,h2,h3,h4,h5,h6, p {margin-block-end: unset; margin-block-start: unset;}
+ul {padding-inline-start: unset;}
+hr {margin-block-start: 0;
+    margin-block-end: 0;}
+.text-hover {
+    position: relative;
+    display: inline-block;
+    transition: .2s all ease-in-out;
+    text-decoration: none; /* Add this line to remove the default underline */
+  }
+  
+  .text-hover::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: black; /* Change the color as needed */
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .2s ease-in-out;
+  }
+  
+  .text-hover:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .text-hover:hover {
+    transform: translateY(-2px);
+  }
+
+.button-hover {
+    position: relative;
+    display: inline-block;
+    transition: .2s all ease-in-out;
+    text-decoration: none; /* Add this line to remove the default underline */
+  }
+  
+  .button-hover::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background-color: black; /* Change the color as needed */
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .2s ease-in-out;
+  }
+  
+  .button-hover:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .button-hover:hover {
+    transform: translateY(-2px);
+  }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    /* padding: 20px; */
+    margin: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: .2s all ease-in-out;
+}
+
+.card:active {
+    transform: scale(0.95);
+}
+
+.hover:hover {
+    transform: translateY(5px) scale(1.05);
+}
+
+.on-card {
+    background-color: #676767;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%; 
+    align-items: end;
+}
+.on-card h3{
+    padding-block: 20px;
+    padding-inline: 30px;
+}
+
+.card-header {
+    width: 100%;
+    text-align: center;
+    margin-block: 20px;
+}
+.card-features {
+    padding-top: 10px;
+    padding-inline: 30px;
+}
+.card-features li {
+    list-style: none;
+}
+
+.btn-buy {
+    font-family: 'Nunito';
+    border: none;
+    background-color: rgb(63, 63, 255);
+    padding: 15px 30px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+    
