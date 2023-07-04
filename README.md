@@ -1,4 +1,5 @@
 # Simple Pricing Card
+<a href="https://ahmakbar.github.io/Simple-Pricing.github.io/">Show Demo</a>
 
 The Simple Pricing Card project is a responsive and customizable pricing card layout built with HTML and CSS. It provides a clean and modern design for displaying pricing tiers or plans on a website.
 
